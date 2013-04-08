@@ -1,1 +1,1 @@
-oauth 2.0 privider.
+oauth 2.0 provider.

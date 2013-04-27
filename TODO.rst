@@ -10,8 +10,3 @@ Authorization types
 
 
 
-
-
-vim NEWLine mode
-
-

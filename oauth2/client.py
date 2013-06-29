@@ -18,12 +18,5 @@ class Client(object):
         pass
 
 
-class User(object):
-    """User interface.
-    """
-    id = None
-    name = None
-    url = None
 
-    def __init__(self):
-        pass
+

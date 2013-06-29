@@ -15,6 +15,9 @@ from flask import render_template
 
 from . import utils
 
+def scope():
+    _scope = ['default', 'login']
+
 @utils.app.route('/authorize', methods=['POST', 'GET'])
 def auth_request():
     """Check RFC6749 4.1.1 for more information.
@@ -22,11 +25,12 @@ def auth_request():
     :param response_type : Value MUST be "code".
     :param client_id string: client id.
     :param redirect_uri string: 
-    :param scope string:
+    :param scope string: list of space-delimited strings.
     :param state string:
 
     Customlize template:
     """
+    
     return render_template("decision.html")
 
 
@@ -36,6 +40,9 @@ def auth_response_succed():
     If authorization is success, return code, state, redirect user agent to
     client.
     """
+    code = None
+    state = None
+
     
 
 def auth_response_error():

@@ -2,3 +2,6 @@
 
 
 
+class User(Object):
+    id = None
+    name = None
